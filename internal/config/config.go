@@ -13,7 +13,7 @@ type AppConfig struct {
 }
 
 type Rest struct {
-	ListenAddress string        `envconfig:"PORT" required:"true"`
+	ListenAddress string        `envconfig:"REST_LISTEN_ADDRESS" required:"true"`
 	WriteTimeout  time.Duration `envconfig:"WRITE_TIMEOUT" required:"true"`
 	ServerName    string        `envconfig:"SERVER_NAME" required:"true"`
 	Token         string        `envconfig:"TOKEN" required:"true"`
